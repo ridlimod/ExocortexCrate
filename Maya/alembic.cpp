@@ -47,6 +47,8 @@ static void deleteAllArchivesCallback(void *clientData)
 
 #ifdef _MSC_VER
 #define EC_EXPORT
+#elif _MAYA2018LINUX_
+#define EC_EXPORT
 #else
 #define EC_EXPORT extern "C"
 #endif
